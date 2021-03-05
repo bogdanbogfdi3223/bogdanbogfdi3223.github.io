@@ -1,0 +1,369 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  color: white;
+  font-family: "Raleway";
+  line-height: 30px;
+  text-decoration: none;
+  list-style-type: none;
+  font-size: 1rem;
+}
+
+body {
+  background-image: url("images/tokyo.jpg");
+  background-size: cover;
+  backdrop-filter: blur(20px);
+}
+
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3 {
+  color: white;
+  font-family: "Raleway", serif;
+}
+
+li{
+  color: white;
+}
+
+h1 {
+  font-size: 40px;
+  line-height: 50px;
+  letter-spacing: -0.45px;
+}
+
+@media screen and (min-width: 700px) {
+  h1 {
+    font-size: 50px;
+  }
+}
+
+h2 {
+  font-size: 40px;
+  line-height: 42px;
+  letter-spacing: -0.36px;
+}
+
+h3 {
+  font-size: 32px;
+  line-height: 36px;
+  letter-spacing: -0.29px;
+}
+
+section {
+  padding: 3rem 0;
+  margin: 0 10vw;
+  border-top: 1px solid #eaeaeb;
+}
+
+
+.firstbutton{
+  background: #203a4c;
+  color: white;
+  text-transform: uppercase;
+  padding: 1rem 2rem;
+  display: inline-block;
+  text-align: center;
+  letter-spacing: 2px;
+  max-height: 4rem;
+  cursor: pointer;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+}
+
+.secondbutton {
+  background: white;
+  color: #33323d;
+  border: 1px solid #33323d;
+  text-transform: uppercase;
+  padding: 1rem 2rem;
+  text-align: center;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
+.social {
+  width: 25px;
+  height: 25px;
+  float: left;
+  display: block;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.right {
+  display: block;
+  width: 40%;
+  text-align: right;
+}
+
+.left {
+  display: block;
+  width: 40%;
+  text-align: left;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5%;
+}
+
+header {
+  padding: 1rem 10vw;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  position: fixed;
+  width: 100vw;
+  top: 0;
+  z-index: 5;
+}
+.navbar {
+  display: none;
+  grid-column: 2/3;
+  align-self: center;
+  justify-self: end;
+}
+
+#topheaderindex {
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: repeat(3, auto) 1fr repeat(2, auto);
+  grid-gap: 1.25rem;
+  padding: 6rem 0 3rem 0;
+  margin: 0 10vw;
+}
+
+
+#about-image {
+  height: 340px;
+  background: url("images/selfie.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center top;
+  width: 100%;
+}
+
+#fiveguysimage {
+  height: 150px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-left: 67%;
+  margin-bottom: -4%;
+}
+
+section > ul {
+  position: relative;
+  bottom: 83px;
+}
+
+#schoolimage {
+  height: 220px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-left: 68%;
+  margin-bottom: -9%;
+}
+
+
+#about-me {
+  display: grid;
+  grid-gap: 1.25rem;
+}
+
+.contact-me {
+  display: grid;
+  grid-gap: 1.25rem;
+}
+
+.divider {
+  display: none;
+}
+
+nav li {
+  margin: 0.5rem 0;
+}
+
+nav li a {
+  color: white;
+  letter-spacing: 2px;
+  font-size: 12px;
+}
+
+nav {
+  grid-area: nav;
+  text-align: center;
+}
+
+.project:nth-of-type(1) {
+  padding: 6rem 0 3rem 0;
+  margin: 0 10vw;
+}
+
+.projectimage {
+  height: 280px;
+}
+
+.project {
+  display: grid;
+  grid-gap: 1.25rem;
+}
+
+#contact-me {
+  padding: 6rem 0 3rem 0;
+  margin: 0 10vw;
+  display: grid;
+  grid-gap: 1.25rem;
+  grid-template-columns: auto 1fr;
+}
+
+#project {
+  padding-top: 6rem;
+  display: none;
+  grid-gap: 3rem;
+}
+
+
+@media screen and (min-width: 700px) {
+  section {
+    padding: 6rem 0;
+  }
+
+  .firstbutton,
+  .secondbutton {
+    width: 15rem;
+    max-width: 15rem;
+  }
+
+  .menu-btn {
+    display: none;
+  }
+
+  .navbar {
+    display: block;
+  }
+
+  .navbar li {
+    display: inline-block;
+    margin-left: 1.25rem;
+    text-transform: uppercase;
+  }
+
+  .navbar li a:hover {
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+    position: relative;
+  }
+
+  #topheaderindex {
+    padding: 12rem 0 12rem 0;
+  }
+
+  #topheaderindex p {
+    width: 75%;
+  }
+
+  #about-me {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas:
+      "img head"
+      "img copy"
+      "img button";
+  }
+
+  #about-image {
+    grid-area: img;
+    height: 100%;
+  }
+
+  .contact-me {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    grid-template-rows: auto 1fr;
+    grid-template-areas:
+      "head line button";
+    align-items: center;
+  }
+
+  .divider {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: #eaeaeb;
+    grid-area: line;
+  }
+
+  .contact-me h2 {
+    grid-area: head;
+  }
+
+  .contact-me p {
+    grid-area: copy;
+  }
+
+  .contact-me a {
+    grid-area: button;
+  }
+
+  .project:nth-of-type(odd) {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas:
+      "img head"
+      "img copy"
+      "img button";
+  }
+
+  .project:nth-of-type(even) {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas:
+      "head img"
+      "copy img"
+      "button img";
+  }
+
+  .projectimage {
+    height: 100%;
+    grid-area: img;
+  }
+
+  .case-copy {
+    grid-area: copy;
+  }
+
+  .project button {
+    grid-area: button;
+  }
+
+  #project {
+    padding-top: 9rem;
+  }
+
+  #project-img {
+    height: 300px;
+  }
+
+  nav li {
+    display: inline-block;
+    margin: 0 1rem;
+    justify-self: start;
+  }
+}
